@@ -1,1 +1,1 @@
-Some code sampels for future reference.
+Some code examples for future reference.
