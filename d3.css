@@ -1,0 +1,50 @@
+#error {
+    display: none;
+    background-color: #efefef;
+    color: #b22222;
+    margin: 10px 0;
+    padding: 4px;
+    font-weight: bold;
+}
+
+.chart {
+    margin-bottom: 20px;
+}
+
+svg {
+    border: 1px solid darkgray;
+}
+
+.bar {
+    fill: steelblue;
+}
+
+.pie-label, .bar-label {
+    font-family: sans-serif;
+    font-size: 11px;
+    fill: white;
+}
+
+.axis path, .axis line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+    font-family: sans-serif;
+    font-size: 11px;
+}
+
+.force-line {
+    stroke: #ccc;
+    stroke-width: 1;
+    /* see marker def in code */
+    marker-end: url('#arrow');
+}
+
+.force-text {
+    font: 10px sans-serif;
+    pointer-events: none;
+    text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
+}

@@ -2,22 +2,27 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>d3.layout.pie</title>
+<title>d3 chart - vbar</title>
 <link rel="stylesheet" href="d3.css" >
 <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.4.8/d3.min.js"></script>  
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
 <body>
 
-<h3>d3.layout.pie</h3>
+<h3>d3 chart - vbar</h3>
 <div id="error"></div>
-<div class="chart" id="pie"></div>
+<div class="chart" id="vbar"></div>
 
-<script src="https://gist.github.com/jywsn/d69a677bc307e25d678e.js"></script>
+<p>
+<a id='chart_restore' href="javascript:">original</a>
+<a id='chart_randomize' href="javascript:">randomize original</a>
+</p>
+
+<script src="https://gist.github.com/jywsn/180de44c0dd2fe5d03b8.js"></script>
 <script type="text/javascript">
 $(function() {
-    var gist_url = 'https://api.github.com/gists/d69a677bc307e25d678e';
-    var filename = 'd3-layout-pie.js';
+    var gist_url = 'https://api.github.com/gists/180de44c0dd2fe5d03b8';
+    var filename = 'd3-chart-vbar.js';
     
     $.ajax({
         url: gist_url,
