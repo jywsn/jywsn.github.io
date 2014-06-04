@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>d3.layout.stack - stream</title>
+<link rel="stylesheet" href="d3.css" >
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.4.8/d3.min.js"></script>  
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+
+<h3>d3.layout.stack - stream</h3>
+<div id="error"></div>
+<p>A streamgraph is a type of stacked area graph which is displaced around a central axis.</p>
+
+<div class="chart" id="stream"></div>
+
+<script src="https://gist.github.com/jywsn/8d06543a5b658192d771.js"></script>
+<script type="text/javascript">
+$(function() {
+    var gist_url = 'https://api.github.com/gists/8d06543a5b658192d771';
+    var filename = 'd3-layout-stack-stream.js';
+    
+    $.ajax({
+        url: gist_url,
+        type: 'GET',
+        dataType: 'jsonp'
+    }).success(function(response) {
+        eval(response.data.files[filename].content);
+    }).error(function() {
+        $('#error').html('Error getting gist content').show();
+    });
+});
+</script>
+
+
+</body>
+</html>
+
